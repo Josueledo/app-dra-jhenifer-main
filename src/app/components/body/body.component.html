@@ -1,0 +1,27 @@
+<div id="inicio" class="main-container">
+
+  <div class="main-content">
+    <div class="tratamentos">
+
+      <div 
+        data-aos="zoom-in" 
+        [attr.data-aos-delay]="(i + 1) * 100"
+        class="item" 
+        *ngFor="let tratamento of tratamentos; let i = index">
+        <img [src]="tratamento.icone" alt="" class="tratamento-icone">
+        <h3>{{ tratamento.tratamento }}</h3>
+        <div class="overlay" (click)="redirectToWhatsApp(tratamento)">
+          <span>Saiba mais +</span>
+        </div>
+      </div>
+    </div>
+  
+    <div data-aos="fade-left" class="profile">
+      <div class="image"></div>
+      <div class="text">
+        <h3>"Aqui começa sua melhor versão ✨"</h3>
+
+      </div>
+    </div>
+  </div>
+</div>

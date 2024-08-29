@@ -1,0 +1,130 @@
+.main-container {
+    background-color: #0f0f0f;
+    height: 130px;
+    width: 100%;
+    display: flex;
+    align-items: center; 
+    padding: 0 20px; 
+    box-sizing: border-box; 
+    position: fixed;
+    top: 0; 
+    left: 0;
+    z-index: 1000; 
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    height: 150px;
+    width: auto; 
+    margin-right: 10px;
+    margin-top: 15px;
+}
+
+.navigator {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.routes {
+    display: flex;
+    align-items: center; 
+    margin-right: 10%;
+}
+
+.routes a {
+    margin: 0 15px; 
+    color: white;
+    text-decoration: none;
+    font-size: 18px; 
+    padding: 10px;
+    font-weight: bold;
+    transition: color 0.5s, border-bottom 0.5s; 
+    border-bottom: 1px solid goldenrod;
+    border-radius: 5px;
+
+}
+
+.routes a:hover {
+    border-bottom: 1px solid goldenrod;
+    color: rgb(0, 0, 0);
+    border-radius: 5px;
+    background: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 80%),
+                radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 25%, #5d4a1f 62.5%, #5d4a1f 100%);
+
+}
+
+.whatsapp {
+    border-bottom: 1px solid goldenrod;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+
+
+
+
+
+
+
+@media (max-width: 320px) {
+    .navigator{
+        display: none;
+    }
+
+
+    .main-container{
+        display: flex;
+        justify-content: center;
+
+    }
+
+
+  }
+  
+  @media (max-width: 730px) {
+        .navigator{
+        display: none;
+    }
+
+
+    .main-container{
+        display: flex;
+        justify-content: center;
+        
+    }
+
+  }
+  
+
+  @media (max-width: 768px) and (max-width: 1024px) {
+
+    .main-container{
+        padding: 0%;
+        align-items: center;
+        justify-content: center;
+        
+    }
+  }
+  
+
+  @media (min-width: 1280px) {
+
+    .main-container{
+        padding: 0%;
+        align-items: center;
+        justify-content: center;
+        
+    }
+  
+  }
+  
+
+  @media (min-width: 1920px) {
+
+    
+  }
