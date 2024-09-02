@@ -1,9 +1,10 @@
+@import "../../../styles.css";
 .main-container {
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     overflow: hidden;
     position: relative;
-    background-color: #0a0a0a;
+    background-color: var(--background);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -14,7 +15,7 @@
 
 .title {
     text-align: center;
-    color: white;
+    color: rgb(41, 41, 41);
     font-size: 30px;
     margin-top: 140px;
     letter-spacing: 10px;
@@ -26,14 +27,9 @@
     width: 60px;
     margin-top: 40px;
     transition: 0.2s;
+    filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.521));
 }
 
-.instagram:hover{
-
-    box-shadow: 1px 0px 5px 9px rgba(247,255,137,0.55);
--webkit-box-shadow: 1px 0px 5px 9px rgba(247,255,137,0.55);
--moz-box-shadow: 1px 0px 5px 9px rgba(247,255,137,0.55);
-}
 
 .carrossel {
     width: 90%;
@@ -79,12 +75,13 @@ button {
     background-color: white;
     border-radius: 50%;
     padding: 10px;
-    color: black;
+    color: rgb(12, 12, 12);
     border: none;
     cursor: pointer;
     z-index: 10;
     width: 40px;
     font-weight: bold;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.151);
     transition: 0.2s ease-in;
 }
 

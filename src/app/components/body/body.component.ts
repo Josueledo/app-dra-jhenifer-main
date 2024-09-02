@@ -9,20 +9,20 @@ import Aos from 'aos';
 export class BodyComponent implements OnInit {
 
   tratamentos = [
-    {tratamento: 'Limpeza', icone: '/assets/tratamentos/limpeza.png'},
-    {tratamento: 'Extração de siso', icone: '/assets/tratamentos/dente-de-siso.png'},
-    {tratamento: 'Implante-unitario', icone: '/assets/tratamentos/implante-unitario.png'},
-    {tratamento: 'Clareamento', icone: '/assets/tratamentos/clareamento-dental.png'},
-    {tratamento: 'Protocolo', icone: '/assets/tratamentos/protocolo.png'},
-    {tratamento: 'Botox', icone: '/assets/tratamentos/botox-preenchimento.png'},
-    {tratamento: 'Clinica', icone: '/assets/tratamentos/clinica.png'},
-    {tratamento: 'Pediatria', icone: '/assets/tratamentos/pediatria.png'},
-    {tratamento: 'Odontologia', icone: '/assets/tratamentos/odontologia.png'},
+    {tratamento: 'Limpeza', icone: '/assets/tratamentos/limpar.png'},
+    {tratamento: 'Extração de siso', icone: '/assets/tratamentos/limpar.png'},
+    {tratamento: 'Implante-unitario', icone: '/assets/tratamentos/limpar.png'},
+    {tratamento: 'Clareamento', icone: '/assets/tratamentos/limpar.png'},
+    {tratamento: 'Protocolo', icone: '/assets/tratamentos/limpar.png'},
+    {tratamento: 'Botox', icone: '/assets/tratamentos/limpar.png'},
+    {tratamento: 'Clinica', icone: '/assets/tratamentos/limpar.png'},
+    {tratamento: 'Pediatria', icone: '/assets/tratamentos/limpar.png'},
+    {tratamento: 'Odontologia', icone: '/assets/tratamentos/limpar.png'},
   ];
 
   ngOnInit() {
     Aos.init({
-      duration: 450, 
+      duration: 450,
       easing: 'ease-in-out',
     });
   }

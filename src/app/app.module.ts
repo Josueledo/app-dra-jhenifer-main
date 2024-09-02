@@ -7,6 +7,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { BodyComponent } from './components/body/body.component';
 import { ClinicaComponent } from './components/clinica/clinica.component';
 import { ContactComponent } from './components/contact/contact.component';
+import { WhatsappComponent } from './components/whatsapp/whatsapp.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { ContactComponent } from './components/contact/contact.component';
     HeaderComponent,
     BodyComponent,
     ClinicaComponent,
-    ContactComponent
+    ContactComponent,
+    WhatsappComponent
   ],
   imports: [
     BrowserModule,

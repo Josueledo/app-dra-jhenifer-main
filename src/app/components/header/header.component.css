@@ -1,15 +1,35 @@
+@import "../../../styles.css";
+
+.location{
+  width: 100%;
+  height: 35px;
+  background-color: var(--primary);
+  background: linear-gradient(80deg, rgba(204,105,39,1) 0%, rgba(164,82,27,1) 88%);
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  h1{
+    font-size: .9rem;
+    color: var(--background);
+    font-weight: 400;
+  }
+}
 .main-container {
-    background-color: #0f0f0f;
-    height: 130px;
+    background-color: var(--background);
+    height: 90px;
     width: 100%;
     display: flex;
-    align-items: center; 
-    padding: 0 20px; 
-    box-sizing: border-box; 
+    align-items: center;
+    padding: 0 20px;
+    box-sizing: border-box;
     position: fixed;
-    top: 0; 
+    top: 35px;
     left: 0;
-    z-index: 1000; 
+    z-index: 1000;
+    border-bottom: 1px solid rgb(219, 219, 219);
 }
 
 .logo-container {
@@ -18,8 +38,8 @@
 }
 
 .logo {
-    height: 150px;
-    width: auto; 
+    height: 90px;
+    width: auto;
     margin-right: 10px;
     margin-top: 15px;
 }
@@ -32,36 +52,44 @@
 
 .routes {
     display: flex;
-    align-items: center; 
+    align-items: center;
     margin-right: 10%;
+    a {
+      margin: 0 15px;
+      color: var(--primary);
+      text-decoration: none;
+      font-size: .9rem;
+      padding: 10px;
+      font-weight: 600;
+      transition: color 0.5s, border-bottom 0.5s;
+      border-radius: 5px;
+      &.home{
+        background-color: var(--secondary);
+        padding: 5px 10px;
+      }
+  }
+
 }
-
-.routes a {
-    margin: 0 15px; 
-    color: white;
-    text-decoration: none;
-    font-size: 18px; 
-    padding: 10px;
-    font-weight: bold;
-    transition: color 0.5s, border-bottom 0.5s; 
-    border-bottom: 1px solid goldenrod;
-    border-radius: 5px;
-
-}
-
 .routes a:hover {
-    border-bottom: 1px solid goldenrod;
-    color: rgb(0, 0, 0);
+    color: var(--primary_hover);
     border-radius: 5px;
-    background: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 80%),
-                radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 25%, #5d4a1f 62.5%, #5d4a1f 100%);
+
 
 }
 
 .whatsapp {
-    border-bottom: 1px solid goldenrod;
     padding: 10px 20px;
     border-radius: 5px;
+    border: 1px solid rgb(216, 216, 216);
+    background-color: var(--primary);
+    color: var(--background) !important;
+    font-weight: 400 !important;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.103);
+    transition: all 1s;
+    &:hover{
+      color: var(--primary) !important;
+      background-color: var(--background);
+    }
 }
 
 
@@ -85,7 +113,7 @@
 
 
   }
-  
+
   @media (max-width: 730px) {
         .navigator{
         display: none;
@@ -95,11 +123,11 @@
     .main-container{
         display: flex;
         justify-content: center;
-        
+
     }
 
   }
-  
+
 
   @media (max-width: 768px) and (max-width: 1024px) {
 
@@ -107,10 +135,10 @@
         padding: 0%;
         align-items: center;
         justify-content: center;
-        
+
     }
   }
-  
+
 
   @media (min-width: 1280px) {
 
@@ -118,13 +146,13 @@
         padding: 0%;
         align-items: center;
         justify-content: center;
-        
+
     }
-  
+
   }
-  
+
 
   @media (min-width: 1920px) {
 
-    
+
   }

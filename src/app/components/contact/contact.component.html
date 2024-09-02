@@ -1,17 +1,24 @@
 <div id="clinica" class="main-container">
   <div class="content">
-    <div data-aos="fade-right" class="title">
-      <h1 class="welcome">Venha nos conhecer !</h1>
 
-      <div class="local">
-        <h1>
-          <a href="https://maps.app.goo.gl/ykuBWzXZ1unt8Nas7" target="_blank"
-            >Av. Sábato Ronsini, 397<br />
-            Sala 2 - SBO</a
-          >
-        </h1>
+    <div class="infos">
+      <div class="horarios">
+        <h1>Sorrisos que Encantam</h1>
+        <div class="horarios_content">
+          <h2>Cuidando do seu sorriso com excelência e dedicação, para uma vida cheia de saúde e confiança.</h2>
+        </div>
       </div>
+      <div
+        (click)="redirectToWhatsApp()"
+        data-aos="zoom-in"
+        data-aos-duration="1000"
+        class="agenda"
+      >
+        <a href="">Agende sua avaliação</a>
+      </div>
+    </div>
 
+    <div data-aos="fade-right" class="title">
       <div data-aos="zoom-in" data-aos-duration="1000" class="map">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3679.1716287683585!2d-47.41980942469388!3d-22.759011079359443!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c89db7d6894e23%3A0xa648d5299924c0bc!2sAv.%20S%C3%A1bato%20Ronsini%2C%20397%20-%202%20-%20Centro%2C%20Santa%20B%C3%A1rbara%20d&#39;Oeste%20-%20SP%2C%2013450-013!5e0!3m2!1spt-BR!2sbr!4v1723350035750!5m2!1spt-BR!2sbr"
@@ -25,21 +32,24 @@
       </div>
     </div>
 
-    <div class="infos">
-      <div class="horarios">
-        <h2>Segunda - Sexta<br />09:00 - 19:00</h2>
-        <br /><br /><br />
-        <h2>Sabado<br />09:00 - 14:00</h2>
-      </div>
+    <footer>
+      <ul>
+        <li class="logo">
+          <img src="logo.png" alt="Logo" class="logo">
+        </li>
+      </ul>
+      <ul>
+        <li class="title">Horários</li>
+        <li>Seg a Sex: 9h às 19h</li>
+        <li>Sab: 9h às 14h</li>
+      </ul>
+      <ul>
+        <li class="title">Local</li>
+        <li>Av. Sábato Ronsini, 397
+          Sala 2 - SBO</li>
+      </ul>
+    </footer>
 
-      <div
-        (click)="redirectToWhatsApp()"
-        data-aos="zoom-in"
-        data-aos-duration="1000"
-        class="agenda"
-      >
-        <h2><a href="">Agende sua avaliação</a></h2>
-      </div>
-    </div>
+
   </div>
 </div>
